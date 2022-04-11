@@ -41,4 +41,6 @@ chimeracc main.imp -o main
 explanation of syntax:
 
 This program appears to be a standard C++ program until you hit nodejs and then two exclamation points. the exclamation points can be replaced with any 
-"Unique token" the only requirements are that the token must not appear in the subsection which is scoped.
+"Unique token" the only requirements are that the token must not appear in the subsection which is scoped.\
+All variables created in impulse are accessible to the language, and can be modified (unless const). Variables created inside the sublanguage are not accessible by impulse and are destroyed after the section has passed.\
+In this example, a number is assigned in impulse, `2`. The number is iterated once in nodejs `number++`, the number is now 3. Then the number is iterated once more in python `number += 1`, itterating the number to 4.
